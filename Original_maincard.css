@@ -1,0 +1,271 @@
+.study-type-section {
+    padding: 0px 15px;
+}
+h2.h2-heading-sm {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8F96B4;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.btn-new-search-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btn-new-search-info button.btn {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #6585FF;
+    border-color: #6585FF;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+input#addStudy {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    color: #A5ACCB;
+    background-color: transparent;
+    border: none;
+}
+input#addStudy::placeholder {
+    color: #A5ACCB;
+}
+textarea::placeholder {
+    color: #A5ACCB;
+}
+:focus-visible {
+    outline: unset;
+}
+.study-type-section h2.h2-study {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7B84A8;
+    margin-bottom: 20px;
+}
+.mt-10{margin-top:10px!important;}
+.mt-20{margin-top:20px!important;}
+.mt-30{margin-top:30px!important;}
+.mt-40{margin-top:40px!important;}
+.mt-50{margin-top:50px!important;}
+.mb-10{margin-bottom:10px!important;}
+.mb-20{margin-bottom:20px!important;}
+.mb-30{margin-bottom:30px!important;}
+.mb-40{margin-bottom:40px!important;}
+.mb-50{margin-bottom:50px!important;}
+
+.study-type-section .btn {
+    position: relative;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #313B65;
+    display: block;
+    width: 100%;
+    padding: 14.5px 30px 14.5px 16px;
+    border: none;
+    border-radius: 3px 15px 15px 15px;
+    text-align: left;
+}
+.study-type-section .dropdown .btn::after {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    transition: all 0.2s ease;
+    transform: rotateZ(-90deg);
+    border-top: 0.5em solid;
+    border-right: 0.5em solid transparent;
+    border-bottom: 0;
+    border-left: 0.5em solid transparent;
+}
+.study-type-section .dropdown.show .btn::after {
+    transform: rotateZ(0deg);
+}
+
+.study-type-section .dropdown.show .btn {
+    border-radius: 3px 15px 0px 0px;
+}
+#submitStudy .btn {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #4368F6;
+    border-color: #4368F6;
+    padding: 13px 10px;
+    display: block;
+    width: 100%;
+}
+.study-type-section .btn:focus {
+    box-shadow: none!important;
+}
+.study-type-section .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #313B65;
+    border-color: #313B65;
+}
+.study-type-section .dropdown .dropdown-menu .dropdown-item:hover, 
+.study-type-section .btn:hover {
+    color: #fff; 
+    background-color: #313B65;
+}
+.study-type-section .btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: #313B65;
+    border-color: #313B65;
+}
+
+
+.study-type-section .dropdown .dropdown-menu{
+    background: #313B65;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    border: none;
+    transform: translate3d(0px, 47px, 0px)!important;
+}
+.study-type-section .dropdown .dropdown-menu .dropdown-item label.label {
+    display: block;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8F96B4;
+    margin-bottom: 8px;
+}
+.study-type-section .dropdown .dropdown-menu .dropdown-item input[type="text"] {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.051));
+    background: #192141;
+    border: 1px solid #5E6891;
+    border-radius: 5px;
+    padding: 12.5px 15px;
+}
+
+/* left icon css  */
+.left-icon-info {
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 5px;
+    max-width: 530px;
+}
+.left-icon-info .left-icon-heading span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8F96B4;
+}
+.row.col-sm-12.activeaddSugestedStudy {
+    margin-top: 6%;
+}
+.row.col-sm-12.activeaddSugestedStudy4 {
+    margin-top: 4%;
+}
+.mb-20{margin-bottom: 20px;}
+.top-right-icon-h2 {
+    align-items: center;
+}
+.top-right-icon-h2 h2.h2-heading-sm {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.displayNone{
+    display: none !important;
+}
+.mt-5px{
+    margin-top: 5px
+}
+.mt-24{
+    margin-top: 58px;
+}
+.pd-5{
+    padding: 5%;
+}
+.mt--6{
+    margin-top: 15px !important;
+}
+.mb-33{
+    margin-bottom: 33px;
+}
+.about-section {
+    max-height: 160px;
+    min-height: 160px;
+    padding-top: 15px;
+}
+
+
+.btn-tabs-info .btn:active, .btn-tabs-info .btn:focus, .btn-tabs-info .btn:hover {
+    border-color: #fff;
+}
+
+/* start tooltip css  */
+.data-tooltip-info {
+    position: absolute;
+    right: 10px;
+}
+
+.data-tooltip-info span[data-title] {
+    position: relative;
+    cursor: help;
+}
+
+.data-tooltip-info span[data-title]:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 29px;
+    right: 0;
+    width: 200px;
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 2px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.data-tooltip-info span[data-title]:hover::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    display: inline-block;
+    color: #fff;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #000;
+}
