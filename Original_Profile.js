@@ -1,30 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 
-// Components
 import NavigationHeader from "../NavBar";
 import ProfileLeftNav from "./ProfileLeftNav";
 import ProfileStudyData from "./ProfileStudyData";
 import ProfilePayments from "./ProfilePayments";
 import AccountSettings from "../my-account/AccountSettings";
 
-// Styles
 import "./Profile.css";
 
 function Profile() {
   const location = useLocation();
+  const history = useHistory();
   const queryParams = new URLSearchParams(location.search);
   const sourceNum = parseInt(queryParams.get("source"));
 
   const [renderOptions, setRenderOptions] = useState(sourceNum || 1);
   const [selectedMenu, setSelectedMenu] = useState(sourceNum || 1);
-
-  function RenderSettings() {
-    if (renderOptions === 1) return <ProfileStudyData />;
-    if (renderOptions === 2) return <ProfilePayments />;
-    if (renderOptions === 3) return <AccountSettings />;
-    return null;
-  }
 
   useEffect(() => {
     const newSource = parseInt(queryParams.get("source"));
@@ -34,10 +26,17 @@ function Profile() {
     }
   }, [sourceNum]);
 
-  function handleSettingClick(e) {
-    const value = parseInt(e.target.value);
+  function handleSettingClick(value) {
     setSelectedMenu(value);
     setRenderOptions(value);
+    history.push(`?source=${value}`);
+  }
+
+  function RenderSettings() {
+    if (renderOptions === 1) return <ProfileStudyData />;
+    if (renderOptions === 2) return <ProfilePayments />;
+    if (renderOptions === 3) return <AccountSettings />;
+    return null;
   }
 
   return (
@@ -54,6 +53,7 @@ function Profile() {
           overflow: "hidden",
         }}
       >
+        {/* Left Nav */}
         <div
           style={{
             color: "white",
@@ -69,6 +69,7 @@ function Profile() {
           </div>
         </div>
 
+        {/* Divider */}
         <div style={{ width: "20px" }}>
           <div
             style={{
@@ -79,6 +80,7 @@ function Profile() {
           />
         </div>
 
+        {/* Main Content */}
         <div
           style={{
             flex: 1,
